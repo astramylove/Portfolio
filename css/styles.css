@@ -1,0 +1,344 @@
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section .socials {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.socials ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-container .socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-container .socials img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-container a {
+    color: #ffa07a;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding-top: 20px;
+    max-width: 1200px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-section__container {
+    max-width: 500px;
+}
+
+.profile-photo {
+    width: 500px;
+    height: 500px;
+}
+
+.main-section__title {
+    font-size: 34px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.437);
+    padding: 30px;
+    /* border-radius: 15px; */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: white;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border-radius: 4 px;
+}
+
+/* Адаптация стилей для секций "Навыки" и "Проекты" */
+
+#skills .skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Прогресс бар для навыков */
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.progress {
+    background-color: rgb(0, 206, 0);
+    border-radius: 5px;
+    height: 10px;
+}
+
+/* Анимация появления секций */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-container a,
+.project-section a {
+    color: #ffa07a;
+}
+
+.footer-container a:hover,
+.project-section a:hover  {
+    color: #c0c0c0;
+}
+
+.main-section a {
+    color: #ffa07a;
+}
+
+.main-section a:hover {
+    color: #c0c0c0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #fff;
+    background: #00000000;
+}
+.contact-section form textarea {
+    width: 98%;
+    height: 150px; 
+    resize: none; 
+}
+.contact-section form button {
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    font-size: 20px;
+}
+
+.contact-section form button:hover {
+    background-color: #555; 
+    transform: scale(1.00); 
+}
+
+.contact-section form button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+input,
+textarea {
+    padding: 10px; /* Отступы внутри инпутов */
+    border: 2px solid #ccc; /* Рамка */
+    border-radius: 5px; /* Закругленные углы */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+    font-size: 16px; /* Размер шрифта */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffa07a; /* Цвет рамки при фокусе */
+    box-shadow: 0 0 5px rgba(255, 160, 122, 0.5); /* Тень при фокусе */
+    outline: none; /* Убираем стандартный контур */
+}
+
+label {
+    font-weight: bold; /* Жирный шрифт для меток */
+}
+
+.about-section {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 36px; 
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    font-size: 18px; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.education-list,
+.qualities-list {
+    list-style-type: disc;
+    margin-left: 20px; 
+}
+
+.education-list li,
+.qualities-list li {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+}
+
+.hobby-text {
+    font-size: 18px;
+    line-height: 1.6; 
+    font-style: italic; 
+}
+.project-section {
+    display: flex;
+    flex-direction: column;
+}
+.project-section div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project img {
+    width: 60px;
+}

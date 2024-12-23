@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-section">
+            <div class="main-section__container">
+                <h1 class="roboto-bold main-section__title">ШУВАЛОВ ВЛАДИСЛАВ — начинающий фронтенд разработчик</h1>
+                <p class="main-section__text">Привет! Меня зовут Владислав, мне 19 лет, и я начинающий фронтенд
+                    разработчик. Я увлечён созданием веб-приложений и стремлюсь развивать свои навыки в HTML, CSS и
+                    JavaScript. Моя цель — создавать современные и удобные интерфейсы, которые будут радовать
+                    пользователей.</p>
+                <p class="main-section__text">В этом портфолио вы сможете узнать больше обо мне, ознакомиться с моими
+                    учебными проектами и связаться со мной. Давайте вместе создавать что-то удивительное!</p>
+            </div>
+            <img src="image/my-photo.png" alt="Мое фото" class="profile-photo">
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">Обо мне</h2>
+            <p class="intro-text">Я начинающий фронтенд разработчик с большим интересом к веб-технологиям. Мой опыт
+                включает в себя учебные проекты, где я использовал HTML, CSS и JavaScript для создания интерактивных
+                веб-страниц. Я постоянно стремлюсь учиться и развиваться в этой области.</p>
+
+            <h3>Образование</h3>
+            <ul class="education-list">
+                <li>Информационные системы и программирование, МБПОУ "Сергиево-Посадский колледж" (2025)</li>
+            </ul>
+
+            <h3>Личные качества</h3>
+            <ul class="qualities-list">
+                <li>Творческий подход к решению задач</li>
+                <li>Быстрая адаптация к новым условиям</li>
+                <li>Стремление к саморазвитию и обучению</li>
+                <li>Командный игрок с отличными коммуникативными навыками</li>
+                <li>Способность работать под давлением и соблюдать сроки</li>
+            </ul>
+
+            <h3>Хобби</h3>
+            <p class="hobby-text">В свободное время я увлекаюсь фотографией, чтением книг, спортом и рисованием. Эти
+                занятия помогают мне находить вдохновение для новых проектов.</p>
+        </section>
+
+
+        <section id="skills" class="skills-section">
+            <h2>Мои навыки</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="icons/html.ico" alt="HTML5">
+                    <h3>HTML5</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                    <p>Продвинутый уровень</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/css.ico" alt="CSS3">
+                    <h3>CSS3</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>Продвинутый уровень</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/js.ico" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <p>Продвинутый уровень</p>
+                </div>
+                <div class="skill">
+                    <img src="icons/figma.ico" alt="Figma">
+                    <h3>Figma</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <p>Продвинутый уровень</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="project-section">
+            <h2>Проекты</h2>
+            <div>
+                <article class="project">
+                    <img src="image/cms.svg" alt="Figma">
+                    <h3>“Система управления запасами в аптеки”</h3>
+                    <a href="https://astramylove.github.io/rigla/">Ссылка на проект</a>
+                </article>
+                <article class="project">
+                    <img src="image/travel.svg" alt="Figma">
+                    <h3>“Путешествие по Индонезии”</h3>
+                    <a href="https://astramylove.github.io/Indonmagic2/">Ссылка на проект</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>Email: <a href="mailto:vladislav.shuvalov2903@gmail.com">vladislav.shuvalov2903@gmail.com</a></p>
+            <p>Телефон: +7 (999) 900-22-84</p>
+            <div class="socials">
+                <ul>
+                    <li><a href="https://github.com/ваш_профиль" target="_blank"><img src="icons/GitHub.svg"
+                                alt="GitHub"></a></li>
+                    <li><a href="https://vk.com/mr__chushka" target="_blank"><img src="icons/vk.svg" alt="VK"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
